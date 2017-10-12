@@ -68,3 +68,16 @@ Ray can now verify that the code, sCount.jar was signed by Susan:
 
 Ray can also give any code signed by Susan permission to access certain files or perform </br>
 operations it would not otherwise be permitted to do, by creating the following policy file </br>
+
+```
+keystore "raystore"; 
+grant signedBy "susan" { 
+    permission java.io.FilePermission "data.txt", "read"; 
+};
+```
+
+And using this when running the code: 
+
+``` java -Djava.security.manager -Djava.security.policy=raypolicy.policy -classpath sCount.jar Count data.txt ```
+
+
