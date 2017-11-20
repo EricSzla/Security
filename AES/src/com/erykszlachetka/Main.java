@@ -8,8 +8,6 @@ import java.io.UnsupportedEncodingException;
 *
 *   Program Developed By:
 *   Name: Eryk Szlachetka
-*   Student No: C14386641
-*   Course: DT282/4
 *
 *   Title:
 *       Expansion Key for AES algorithm.
